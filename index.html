@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background: black;
+        overflow: hidden;
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+      }
+      canvas {
+        background: #000;
+      }
+
+      button {
+        border: none;
+        outline: none;
+        padding: 115px 57px 115px 57px;
+        border-radius: 100%;
+        background-color: white;
+        font-size: 20px;
+      }
+    </style>
+    <title>Fireworks Animation</title>
+  </head>
+  <body style="display: flex; justify-content: center; align-items: center">
+    <div style="display: none">
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <button>Klik untuk mulai</button>
+
+    <audio id="audioID" loop>
+      <source src="fireworks.mp3" type="audio/mp3" />
+    </audio>
+
+    <script src="fireworks.js"></script>
+  </body>
+</html>
